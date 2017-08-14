@@ -31,10 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -49,8 +45,6 @@
     <Compile Include="Enums\EnumManager.cs" />
     <Compile Include="Enums\HttpStatusAttribute.cs" />
     <Compile Include="Enums\IEnumAttribute.cs" />
-    <Compile Include="Logging\Logger.cs" />
-    <Compile Include="Logging\LogLevel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomCodeGenerator.cs" />
     <Compile Include="SingletonBase.cs" />
