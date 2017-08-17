@@ -58,5 +58,33 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment\DefaultData" />
+    <Folder Include="Schema Objects" />
+    <Folder Include="Schema Objects\dbo" />
+    <Folder Include="Schema Objects\dbo\Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Schema Objects\dbo\Tables\ContentAttachment.sql" />
+    <Build Include="Schema Objects\dbo\Tables\ContentRecord.sql" />
+    <Build Include="Schema Objects\dbo\Tables\ContentShare.sql" />
+    <Build Include="Schema Objects\dbo\Tables\HelpDeskAttachnment.sql" />
+    <Build Include="Schema Objects\dbo\Tables\HelpDeskTicket.sql" />
+    <Build Include="Schema Objects\dbo\Tables\HelpDeskTicketHistory.sql" />
+    <Build Include="Schema Objects\dbo\Tables\MediaAttachment.sql" />
+    <Build Include="Schema Objects\dbo\Tables\Provider.sql" />
+    <Build Include="Schema Objects\dbo\Tables\ProviderAcceptedTOS.sql" />
+    <Build Include="Schema Objects\dbo\Tables\Speciality.sql" />
+    <Build Include="Schema Objects\dbo\Tables\Status.sql" />
+    <Build Include="Schema Objects\dbo\Tables\TermsOfService.sql" />
+    <Build Include="Schema Objects\dbo\Tables\UniversalMessage.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Post-Deployment\PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\Pre-Deployment\PreDeployment.sql" />
   </ItemGroup>
 </Project>
