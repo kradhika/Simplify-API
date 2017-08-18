@@ -46,6 +46,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mappings\ContentRecordMap.cs" />
+    <Compile Include="Mappings\ContentShareMap.cs" />
+    <Compile Include="Mappings\HelpDeskAttachnmentMap.cs" />
+    <Compile Include="Mappings\HelpDeskTicketHistoryMap.cs" />
+    <Compile Include="Mappings\HelpDeskTicketMap.cs" />
+    <Compile Include="Mappings\MediaAttachmentMap.cs" />
+    <Compile Include="Mappings\ProviderMap.cs" />
+    <Compile Include="Mappings\SpecialityMap.cs" />
+    <Compile Include="Mappings\StatusMap.cs" />
+    <Compile Include="Mappings\TermsOfServiceMap.cs" />
+    <Compile Include="Mappings\UniversalMessageMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimplifyContext.cs" />
     <Compile Include="SimplifyRepository.cs" />
@@ -55,7 +66,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mappings\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>

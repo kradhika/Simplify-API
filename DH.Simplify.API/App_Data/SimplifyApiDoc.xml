@@ -1,0 +1,118 @@
+﻿<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>DH.Simplify.API</name>
+  </assembly>
+  <members>
+    <member name="T:DH.Simplify.API.FilterConfig">
+      <summary>
+        Handles global filters
+      </summary>
+    </member>
+    <member name="M:DH.Simplify.API.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)">
+      <summary>
+        Registers global filters
+      </summary>
+      <param name="filters">GlobalFilterCollection</param>
+    </member>
+    <member name="T:DH.Simplify.API.RouteConfig">
+      <summary>
+        Handles routing configurations
+      </summary>
+    </member>
+    <member name="M:DH.Simplify.API.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)">
+      <summary>
+        creates routing configuration
+      </summary>
+      <param name="routes"></param>
+    </member>
+    <member name="T:DH.Simplify.API.SwaggerConfig">
+      <summary>
+
+      </summary>
+    </member>
+    <member name="M:DH.Simplify.API.SwaggerConfig.Register">
+      <summary>
+
+      </summary>
+    </member>
+    <member name="T:DH.Simplify.API.WebApiConfig">
+      <summary>
+        Handles WebAPI routing
+      </summary>
+    </member>
+    <member name="M:DH.Simplify.API.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+      <summary>
+        Initializes WebAPI routing
+      </summary>
+      <param name="config">HttpConfiguration object</param>
+    </member>
+    <member name="T:DH.Simplify.API.Controllers.SimplifyBaseController">
+      <summary>
+        Base class for all the controllers
+      </summary>
+    </member>
+    <member name="M:DH.Simplify.API.Controllers.SimplifyBaseController.BuildSuccessResponse(System.Net.HttpStatusCode)">
+      <summary>
+        Returns success response
+      </summary>
+      <param name="httpStatus">HttpStatusCode</param>
+      <returns>HttpResponseMessage object</returns>
+    </member>
+    <member name="M:DH.Simplify.API.Controllers.SimplifyBaseController.BuildSuccessResponse``1(System.Net.HttpStatusCode,``0)">
+      <summary>
+        Returns success response
+      </summary>
+      <param name="httpStatus">HttpStatusCode</param>
+      <param name="resultValue">Result</param>
+      <returns>HttpResponseMessage object</returns>
+    </member>
+    <member name="M:DH.Simplify.API.Controllers.SimplifyBaseController.BuildErrorResponse(DH.Simplify.Core.Enterprise.Common.ResponseCodes)">
+      <summary>
+        Returns error response
+      </summary>
+      <param name="responseCode">ResponseCodes</param>
+      <returns>HttpResponseMessage object</returns>
+    </member>
+    <member name="M:DH.Simplify.API.Controllers.SimplifyBaseController.BuildErrorResponse(DH.Simplify.Core.Enterprise.Common.ResponseCodes,System.Net.HttpStatusCode)">
+      <summary>
+        Returns error response
+      </summary>
+      <param name="responseCode">ResponseCodes</param>
+      <param name="httpStatus">HttpStatusCode</param>
+      <returns></returns>
+    </member>
+    <member name="T:DH.Simplify.API.WebApiApplication">
+      <summary>
+        WebApiApplication
+      </summary>
+    </member>
+    <member name="M:DH.Simplify.API.WebApiApplication.Application_Start">
+      <summary>
+        Application_Start event
+      </summary>
+    </member>
+    <member name="T:DH.Simplify.API.Infrastructure.Filters.HandleApiExceptionFilter">
+      <summary>
+        Handles all exceptions
+      </summary>
+    </member>
+    <member name="M:DH.Simplify.API.Infrastructure.Filters.HandleApiExceptionFilter.OnException(System.Web.Http.Filters.HttpActionExecutedContext)">
+      <summary>
+        Process all Exceptions in current context
+      </summary>
+      <param name="context"></param>
+    </member>
+    <member name="T:DH.Simplify.API.Infrastructure.Filters.ValidationActionFilter">
+      <summary>
+        Handles all request validation
+      </summary>
+    </member>
+    <member name="M:DH.Simplify.API.Infrastructure.Filters.ValidationActionFilter.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+      <summary>
+        Process all request validation in current context
+      </summary>
+      <param name="actionContext">HttpActionContext object</param>
+    </member>
+  </members>
+</doc>

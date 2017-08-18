@@ -41,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContentRecord.cs" />
+    <Compile Include="ContentShare.cs" />
+    <Compile Include="HelpDeskAttachnment.cs" />
+    <Compile Include="HelpDeskTicket.cs" />
+    <Compile Include="HelpDeskTicketHistory.cs" />
+    <Compile Include="MediaAttachment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider.cs" />
+    <Compile Include="Speciality.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="TermsOfService.cs" />
+    <Compile Include="UniversalMessage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
